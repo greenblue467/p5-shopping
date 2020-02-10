@@ -17,11 +17,13 @@
     width: 500px;
     height: 600px;
     transform: translateX(-250px);
+    padding: 1rem 2rem;
   }
   @include desktop {
     width: 800px;
     height: 600px;
     transform: translateX(-400px);
+    padding: 1rem 3rem;
   }
   .detail-close {
     cursor: pointer;
@@ -37,14 +39,27 @@
     display: flex;
     padding-top: 1rem;
     box-sizing: border-box;
+
     img {
-      width: 2%;
-      flex: 50%;
+      width: 150px;
+      flex: 1 1 150px;
+      @include pad {
+        width: 200px;
+        flex: 1 1 200px;
+      }
+      @include desktop {
+        width: 300px;
+        flex: 1 1 300px;
+      }
     }
     .info-box {
       flex: 50%;
       padding-left: 1rem;
       box-sizing: border-box;
+      @include pad {
+        padding-left: 2rem;
+      }
+
       .info-text {
         h3 {
           font-size: 1rem;
