@@ -489,7 +489,6 @@ class App extends Component {
     });
   };
   render() {
-    console.log("test");
     return (
       <React.Fragment>
         <Router basename="/p5-shopping">

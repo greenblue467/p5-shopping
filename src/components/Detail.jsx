@@ -13,7 +13,9 @@ const Detail = props => {
           X
         </div>
         <div className="detail-info">
-          <img src={props.product.map(x => x.photo1)} alt="" />
+          <div className="img">
+            <img src={props.product.map(x => x.photo1)} alt="" />
+          </div>
           <div className="info-box">
             <div className="info-text">
               <h3>{props.product.map(x => x.title)}</h3>
