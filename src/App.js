@@ -487,7 +487,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Detail
             isOpen={this.state.isOpen}
             product={this.state.product}
