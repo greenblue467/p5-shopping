@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/p5-shopping/static/css/main.c24e828d.chunk.css",
+    "main.js": "/p5-shopping/static/js/main.078ba613.chunk.js",
+    "main.js.map": "/p5-shopping/static/js/main.078ba613.chunk.js.map",
+    "runtime-main.js": "/p5-shopping/static/js/runtime-main.a75cd4c5.js",
+    "runtime-main.js.map": "/p5-shopping/static/js/runtime-main.a75cd4c5.js.map",
+    "static/js/2.b79bc274.chunk.js": "/p5-shopping/static/js/2.b79bc274.chunk.js",
+    "static/js/2.b79bc274.chunk.js.map": "/p5-shopping/static/js/2.b79bc274.chunk.js.map",
+    "index.html": "/p5-shopping/index.html",
+    "precache-manifest.1dd810f89cc37a0f8f3055f357a8b4ab.js": "/p5-shopping/precache-manifest.1dd810f89cc37a0f8f3055f357a8b4ab.js",
+    "service-worker.js": "/p5-shopping/service-worker.js",
+    "static/css/main.c24e828d.chunk.css.map": "/p5-shopping/static/css/main.c24e828d.chunk.css.map",
+    "static/js/2.b79bc274.chunk.js.LICENSE.txt": "/p5-shopping/static/js/2.b79bc274.chunk.js.LICENSE.txt",
+    "static/media/p1.jpg": "/p5-shopping/static/media/p1.46465899.jpg",
+    "static/media/p2.jpg": "/p5-shopping/static/media/p2.bfaf898f.jpg",
+    "static/media/p3.jpg": "/p5-shopping/static/media/p3.4dcb1c4f.jpg",
+    "static/media/news.css": "/p5-shopping/static/media/p8.acc51158.jpg",
+    "static/media/body.css": "/p5-shopping/static/media/p7.cd2bdb3a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a75cd4c5.js",
+    "static/js/2.b79bc274.chunk.js",
+    "static/css/main.c24e828d.chunk.css",
+    "static/js/main.078ba613.chunk.js"
+  ]
+}
