@@ -1,0 +1,226 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #242d43;
+  color: #d9cfb5;
+  height: 5rem;
+  width: 100vw;
+  padding: 0 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  z-index: 10;
+}
+
+.navbar .nav {
+  background-color: #2d3854;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  font-size: 1.2rem;
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .nav {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    position: relative;
+    top: 0;
+    margin-left: 5rem;
+    background-color: #242d43;
+  }
+}
+
+.navbar .nav .linkStyle {
+  text-decoration: none;
+  color: #d9cfb5;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .nav .linkStyle:hover {
+    color: #c8b993;
+  }
+}
+
+.navbar .nav .linkStyle li {
+  list-style: none;
+  padding: 1rem 0;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .nav .linkStyle li {
+    padding: 1rem 1rem;
+  }
+}
+
+.navbar .nav .linkStyle li:hover {
+  background-color: #364364;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .nav .linkStyle li:hover {
+    background-color: #242d43;
+  }
+}
+
+.navbar .menu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 45px;
+          flex: 0 1 45px;
+  position: relative;
+  width: 45px;
+  height: 30px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .menu {
+    display: none;
+  }
+}
+
+.navbar .menu .shield {
+  cursor: pointer;
+  position: absolute;
+  width: 45px;
+  height: 35px;
+  background-color: black;
+  opacity: 0;
+}
+
+.navbar .menu .shield:hover {
+  opacity: 0.1;
+}
+
+.navbar .menu .top {
+  background-color: #d9cfb5;
+  width: 20px;
+  height: 6px;
+  position: absolute;
+  -webkit-transition: width 0.5s, -webkit-transform 0.5s;
+  transition: width 0.5s, -webkit-transform 0.5s;
+  transition: width 0.5s, transform 0.5s;
+  transition: width 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+.navbar .menu .animation1 {
+  width: 45px;
+  -webkit-transform: rotate(45deg) translate(6px, 11px);
+          transform: rotate(45deg) translate(6px, 11px);
+}
+
+.navbar .menu .middle {
+  background-color: #d9cfb5;
+  width: 30px;
+  height: 6px;
+  position: absolute;
+  top: 13px;
+  -webkit-transition: width 0.5s, -webkit-transform 0.5s;
+  transition: width 0.5s, -webkit-transform 0.5s;
+  transition: width 0.5s, transform 0.5s;
+  transition: width 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+.navbar .menu .animation2 {
+  width: 45px;
+  -webkit-transform: rotate(-405deg) translate(-2px, -2px);
+          transform: rotate(-405deg) translate(-2px, -2px);
+}
+
+.navbar .menu .bottom {
+  background-color: #d9cfb5;
+  width: 45px;
+  height: 6px;
+  position: absolute;
+  -webkit-transform-origin: 22.5px 3px;
+          transform-origin: 22.5px 3px;
+  top: 26px;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+.navbar .menu .animation3 {
+  opacity: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.navbar .logo {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  font-size: 2rem;
+  font-family: fantasy, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .logo {
+    -webkit-box-flex: 10%;
+        -ms-flex: 10%;
+            flex: 10%;
+  }
+}
+
+.navbar .logo .logoStyle {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar .logo .logoStyle:hover {
+  color: #c8b993;
+}
+
+.navbar .cart {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50px;
+          flex: 0 1 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .cart {
+    left: -1rem;
+  }
+}
+
+.navbar .cart .cartStyle {
+  color: inherit;
+  font-weight: bold;
+}
+
+.navbar .cart:hover {
+  color: #c8b993;
+}
+
+.navbar .cart div {
+  font-size: 1rem;
+  background-color: #ff9999;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 999rem;
+  color: white;
+  line-height: 1.5rem;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.2rem;
+}
+/*# sourceMappingURL=nav.css.map */

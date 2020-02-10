@@ -1,0 +1,103 @@
+.cartStyle .myCart {
+  background-color: #d9cfb5;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  color: #242d43;
+  font-weight: bold;
+}
+
+.cartStyle .myItem {
+  padding: 5rem 1rem 5rem 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .cartStyle .myItem {
+    padding: 8rem 5rem;
+  }
+}
+
+.cartStyle .myPrice {
+  background-color: #d9cfb5;
+  color: #242d43;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .cartStyle .myPrice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.cartStyle .myPrice .myPrice-1 {
+  text-align: right;
+}
+
+.cartStyle .myPrice .myPrice-1 span {
+  color: red;
+}
+
+@media screen and (min-width: 768px) {
+  .cartStyle .myPrice .myPrice-1 {
+    text-align: left;
+    margin-right: 2rem;
+  }
+}
+
+.cartStyle .myPrice .myPrice-0 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .cartStyle .myPrice .myPrice-0 {
+    margin-top: 0rem;
+  }
+}
+
+.cartStyle .myPrice .myPrice-0 .myPrice-2 {
+  background-color: #b6a372;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  text-decoration: none;
+}
+
+.cartStyle .myPrice .myPrice-0 .myPrice-2:hover {
+  background-color: #c8b993;
+}
+
+.cartStyle .myPrice .myPrice-0 .myPrice-2 div {
+  color: #242d43;
+}
+
+.cartStyle .myPrice .myPrice-0 .myPrice-3 {
+  text-decoration: none;
+  background-color: #242d43;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.cartStyle .myPrice .myPrice-0 .myPrice-3:hover {
+  background-color: #364364;
+}
+
+.cartStyle .myPrice .myPrice-0 .myPrice-3 div {
+  color: #d9cfb5;
+}
+/*# sourceMappingURL=list.css.map */

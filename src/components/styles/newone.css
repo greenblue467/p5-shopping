@@ -1,0 +1,35 @@
+.productList {
+  width: 300px;
+  height: 450px;
+  text-align: center;
+  background-color: #b6a372;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 2rem;
+  cursor: pointer;
+}
+
+.productList:hover {
+  background-color: #c8b993;
+}
+
+.productList img {
+  width: 100%;
+}
+
+.productList h3 {
+  margin-top: 2rem;
+  color: #242d43;
+}
+
+.productList p {
+  margin-top: 0.5rem;
+  color: #990000;
+  font-size: 1.2rem;
+}
+
+.productList p span {
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=newone.css.map */

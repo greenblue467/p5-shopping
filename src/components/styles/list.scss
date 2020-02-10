@@ -1,0 +1,73 @@
+@import "./var.scss";
+
+.cartStyle {
+  .myCart {
+    background-color: $color2;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    color: $color1;
+    font-weight: bold;
+  }
+  .myItem {
+    padding: 5rem 1rem 5rem 1.5rem;
+    @include pad {
+      padding: 8rem 5rem;
+    }
+  }
+  .myPrice {
+    background-color: $color2;
+    color: $color1;
+    font-size: 1.2rem;
+    padding: 2rem;
+    @include pad {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .myPrice-1 {
+      text-align: right;
+      span {
+        color: red;
+      }
+      @include pad {
+        text-align: left;
+        margin-right: 2rem;
+      }
+    }
+    .myPrice-0 {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+      @include pad {
+        margin-top: 0rem;
+      }
+      .myPrice-2 {
+        background-color: darken($color2, 20%);
+        padding: 1rem;
+        border-radius: 0.2rem;
+        text-decoration: none;
+        &:hover {
+          background-color: darken($color2, 10%);
+        }
+        div {
+          color: $color1;
+        }
+      }
+      .myPrice-3 {
+        text-decoration: none;
+        background-color: $color1;
+        padding: 1rem;
+        border-radius: 0.2rem;
+        margin-left: 2rem;
+        cursor: pointer;
+        &:hover {
+          background-color: lighten($color1, 10%);
+        }
+        div {
+          color: $color2;
+        }
+      }
+    }
+  }
+}

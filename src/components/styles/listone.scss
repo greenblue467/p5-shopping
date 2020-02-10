@@ -1,0 +1,45 @@
+@import "./var.scss";
+
+.list-item {
+  color: darken(grey, 20%);
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  @include pad {
+    font-size: 1.2rem;
+  }
+  img {
+    width: 20%;
+    flex: 25%;
+  }
+  .trash {
+    font-size: 1.2rem;
+    color: grey;
+    cursor: pointer;
+    flex: 5%;
+    text-align: right;
+    @include pad {
+      font-size: 1.5rem;
+    }
+  }
+  .item-title {
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    flex: 40%;
+    @include pad {
+      padding: 0 1rem;
+    }
+  }
+  .item-price {
+    text-align: center;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    flex: 20%;
+    @include pad {
+      padding: 0 1rem;
+    }
+  }
+  .item-value {
+    flex: 10%;
+  }
+}

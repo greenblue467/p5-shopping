@@ -1,0 +1,39 @@
+@import "./var.scss";
+
+.foot {
+  color: $color2;
+  background-color: $color1;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  @include pad {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 2rem;
+  }
+  @include desktop {
+    padding: 2rem;
+  }
+  .info {
+    h1 {
+      font-family: fantasy, Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      padding-bottom: 1rem;
+    }
+    p {
+      line-height: 1.8rem;
+      color: white;
+    }
+  }
+  .notice {
+    text-align: center;
+    padding-top: 2rem;
+    @include pad {
+      text-align: left;
+      margin-left: 4rem;
+    }
+    p {
+      line-height: 1.8rem;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import "./var.scss";
+
+.container2 {
+  background-color: $color2;
+  .picture {
+    width: 100%;
+    height: 500px;
+    background-image: url("p4.jpg");
+    background-size: cover;
+    background-position: 60% 0;
+    @include pad {
+      background-position: center;
+    }
+  }
+  .picture2 {
+    @extend .picture;
+    background-image: url("p5.jpg");
+  }
+  .picture3 {
+    @extend .picture;
+    background-image: url("p8.jpg");
+    background-position: 40% 0;
+  }
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+}

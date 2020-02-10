@@ -1,0 +1,30 @@
+@import "./var.scss";
+
+.productList {
+  width: 300px;
+  height: 450px;
+  text-align: center;
+  background-color: darken($color2, 20%);
+  padding: 1rem;
+  box-sizing: border-box;
+  margin: 2rem;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($color2, 10%);
+  }
+  img {
+    width: 100%;
+  }
+  h3 {
+    margin-top: 2rem;
+    color: $color1;
+  }
+  p {
+    margin-top: 0.5rem;
+    color: darken(red, 20%);
+    font-size: 1.2rem;
+    span {
+      font-size: 0.8rem;
+    }
+  }
+}

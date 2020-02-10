@@ -1,0 +1,77 @@
+.list-item {
+  color: #4d4d4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .list-item {
+    font-size: 1.2rem;
+  }
+}
+
+.list-item img {
+  width: 20%;
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+}
+
+.list-item .trash {
+  font-size: 1.2rem;
+  color: grey;
+  cursor: pointer;
+  -webkit-box-flex: 5%;
+      -ms-flex: 5%;
+          flex: 5%;
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  .list-item .trash {
+    font-size: 1.5rem;
+  }
+}
+
+.list-item .item-title {
+  padding: 0 0.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+}
+
+@media screen and (min-width: 768px) {
+  .list-item .item-title {
+    padding: 0 1rem;
+  }
+}
+
+.list-item .item-price {
+  text-align: center;
+  padding: 0 0.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+}
+
+@media screen and (min-width: 768px) {
+  .list-item .item-price {
+    padding: 0 1rem;
+  }
+}
+
+.list-item .item-value {
+  -webkit-box-flex: 10%;
+      -ms-flex: 10%;
+          flex: 10%;
+}
+/*# sourceMappingURL=listone.css.map */

@@ -1,0 +1,56 @@
+.foot {
+  color: #d9cfb5;
+  background-color: #242d43;
+  padding: 2rem 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .foot {
+    padding: 2rem;
+  }
+}
+
+.foot .info h1 {
+  font-family: fantasy, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.foot .info p {
+  line-height: 1.8rem;
+  color: white;
+}
+
+.foot .notice {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .foot .notice {
+    text-align: left;
+    margin-left: 4rem;
+  }
+}
+
+.foot .notice p {
+  line-height: 1.8rem;
+}
+/*# sourceMappingURL=footer.css.map */
