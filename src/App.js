@@ -13,7 +13,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   state = {
-    url: "",
+    url: "http://localhost:3000/",
     isOpen: false,
     total: 0,
     totalPrice: 0,
@@ -359,7 +359,7 @@ class App extends Component {
       top: 0,
       behavior: "smooth"
     });
-    this.setState({ url: "" });
+    this.setState({ url: "http://localhost:3000/" });
   };
   urlChange1 = () => {
     window.scrollTo({
@@ -416,7 +416,11 @@ class App extends Component {
     const newState = newCart.reduce((prev, next) => {
       return prev + next;
     }, 0);
-    this.setState({ isOpen: false, url: "", totalPrice: newState });
+    this.setState({
+      isOpen: false,
+      url: "http://localhost:3000/list",
+      totalPrice: newState
+    });
   };
   increment = e => {
     const newArray = [...this.state.product];
@@ -487,7 +491,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename="/p5-shopping">
           <Detail
             isOpen={this.state.isOpen}
             product={this.state.product}
