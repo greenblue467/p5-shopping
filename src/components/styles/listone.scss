@@ -21,6 +21,9 @@
     @include pad {
       font-size: 1.5rem;
     }
+    &:hover {
+      color: darken(grey, 20%);
+    }
   }
   .item-title {
     padding: 0 0.5rem;

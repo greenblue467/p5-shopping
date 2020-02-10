@@ -55,10 +55,11 @@
 }
 
 .detail .detail-info img {
-  width: 50%;
+  width: 30%;
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
+  background-color: green;
 }
 
 .detail .detail-info .info-box {
