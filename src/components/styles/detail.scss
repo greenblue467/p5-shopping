@@ -43,6 +43,7 @@
     img {
       width: 150px;
       flex: 1 1 150px;
+      overflow: hidden;
       @include pad {
         width: 200px;
         flex: 1 1 200px;
@@ -54,6 +55,7 @@
     }
     .info-box {
       flex: 50%;
+
       padding-left: 1rem;
       box-sizing: border-box;
       @include pad {
