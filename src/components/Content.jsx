@@ -5,7 +5,7 @@ import Body from "./Body";
 const Content = props => {
   return (
     <div>
-      <Header />
+      <Header jump={e => props.jump(e)} />
       <Body />
     </div>
   );

@@ -7,10 +7,13 @@ import { Link } from "react-router-dom";
 import $ from "jquery";
 
 const Header = props => {
+  var start;
+  var n = 1;
+
   const slide = () => {
-    var n = 1;
     const running = function() {
       const wid = 100;
+
       if (n < 1) {
         $(".pic1").animate(
           {
@@ -44,7 +47,7 @@ const Header = props => {
         $(".pic1").animate(
           {
             left: wid * n + "vw",
-            zIndex: 0
+            zIndex: 10
           },
           {
             duration: 1000
@@ -62,7 +65,7 @@ const Header = props => {
         $(".pic3").animate(
           {
             left: -wid * n + "vw",
-            zIndex: 1
+            zIndex: -10
           },
           {
             duration: 1000
@@ -100,10 +103,118 @@ const Header = props => {
         n = 0;
       }
     };
-    const start = setInterval(running, 6000);
+    start = setInterval(running, 6000);
+  };
+  const stop = () => {
+    clearInterval(start);
+  };
+  const go = () => {
+    const running = function() {
+      const wid = 100;
+      if (n < 1) {
+        $(".pic1").animate(
+          {
+            left: wid * n + "vw",
+            zIndex: 2
+          },
+          {
+            duration: 1000
+          }
+        );
+        $(".pic2").animate(
+          {
+            left: -wid * (n + 1) + "vw",
+            zIndex: 1
+          },
+          {
+            duration: 1000
+          }
+        );
+        $(".pic3").animate(
+          {
+            left: wid * (n + 1) + "vw",
+            zIndex: 0
+          },
+          {
+            duration: 1000
+          }
+        );
+        n++;
+      } else if (n < 2) {
+        $(".pic1").animate(
+          {
+            left: wid * n + "vw",
+            zIndex: 10
+          },
+          {
+            duration: 1000
+          }
+        );
+        $(".pic2").animate(
+          {
+            left: wid * (n - 1) + "vw",
+            zIndex: 2
+          },
+          {
+            duration: 1000
+          }
+        );
+        $(".pic3").animate(
+          {
+            left: -wid * n + "vw",
+            zIndex: -10
+          },
+          {
+            duration: 1000
+          }
+        );
+        n++;
+      } else if (n < 3) {
+        $(".pic1").animate(
+          {
+            left: -wid * (n - 1) + "vw",
+            zIndex: 1
+          },
+          {
+            duration: 1000
+          }
+        );
+        $(".pic2").animate(
+          {
+            left: wid * (n - 1) + "vw",
+            zIndex: 0
+          },
+          {
+            duration: 1000
+          }
+        );
+        $(".pic3").animate(
+          {
+            left: wid * (n - 2) + "vw",
+            zIndex: 2
+          },
+          {
+            duration: 1000
+          }
+        );
+        n = 0;
+      }
+    };
+    start = setInterval(running, 6000);
   };
   return (
-    <div className="container" style={slide()}>
+    <div
+      className="container"
+      onMouseOver={stop}
+      onMouseOut={go}
+      style={slide()}
+    >
+      <div className="btn">
+        <div onClick={() => props.jump(1)}></div>
+        <div onClick={() => props.jump(2)}></div>
+        <div onClick={() => props.jump(3)}></div>
+      </div>
+
       <Link to="/new">
         <img src={p1} className="pic1" />
       </Link>

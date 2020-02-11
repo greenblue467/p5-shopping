@@ -488,6 +488,97 @@ class App extends Component {
       empty: n - 1
     });
   };
+  jump = e => {
+    var n = e;
+    if (n < 2) {
+      const wid = 100;
+      $(".pic1").animate(
+        {
+          left: wid * (n - 1) + "vw",
+          zIndex: 2
+        },
+        {
+          duration: 1000
+        }
+      );
+      $(".pic2").animate(
+        {
+          left: -wid * n + "vw",
+          zIndex: 1
+        },
+        {
+          duration: 1000
+        }
+      );
+      $(".pic3").animate(
+        {
+          left: wid * n + "vw",
+          zIndex: 0
+        },
+        {
+          duration: 1000
+        }
+      );
+    } else if (n < 3) {
+      const wid = 100;
+      $(".pic1").animate(
+        {
+          left: wid * (n - 1) + "vw",
+          zIndex: 0
+        },
+        {
+          duration: 1000
+        }
+      );
+      $(".pic2").animate(
+        {
+          left: wid * (n - 2) + "vw",
+          zIndex: 2
+        },
+        {
+          duration: 1000
+        }
+      );
+      $(".pic3").animate(
+        {
+          left: -wid * (n - 1) + "vw",
+          zIndex: 1
+        },
+        {
+          duration: 1000
+        }
+      );
+    } else if (n < 4) {
+      const wid = 100;
+      $(".pic1").animate(
+        {
+          left: -wid * (n - 4) + "vw",
+          zIndex: 1
+        },
+        {
+          duration: 1000
+        }
+      );
+      $(".pic2").animate(
+        {
+          left: wid * (n - 2) + "vw",
+          zIndex: 0
+        },
+        {
+          duration: 1000
+        }
+      );
+      $(".pic3").animate(
+        {
+          left: wid * (n - 3) + "vw",
+          zIndex: 2
+        },
+        {
+          duration: 1000
+        }
+      );
+    }
+  };
   render() {
     return (
       <React.Fragment>
@@ -513,7 +604,11 @@ class App extends Component {
           />
           <div className="box">
             <Switch>
-              <Route path="/" exact component={Content} />
+              <Route
+                path="/"
+                exact
+                render={props => <Content {...props} jump={this.jump} />}
+              />
               <Route
                 path="/new"
                 render={props => (
@@ -546,6 +641,7 @@ class App extends Component {
                     thanks={this.thanks}
                     delete={this.delete}
                     slide={this.slide}
+                    empty={this.state.empty}
                   />
                 )}
               />
