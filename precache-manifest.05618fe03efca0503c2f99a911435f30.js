@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8c0c304e1cab72bac57ffd933b1a4a6a",
+    "revision": "47b7ff06af9a644cfe63f8cdcce1ef35",
     "url": "/p5-shopping/index.html"
   },
   {
-    "revision": "66d12a0ee824fec841d1",
-    "url": "/p5-shopping/static/css/main.cdd6cfac.chunk.css"
+    "revision": "eb1fc5e3d395d603191a",
+    "url": "/p5-shopping/static/css/main.ccb62ab1.chunk.css"
   },
   {
-    "revision": "a208cf15e34c6af6f246",
-    "url": "/p5-shopping/static/js/2.b79bc274.chunk.js"
+    "revision": "12373af481708c543c62",
+    "url": "/p5-shopping/static/js/2.0697d77b.chunk.js"
   },
   {
     "revision": "af1b71dc8f7cc14f3b4c1f4697374759",
-    "url": "/p5-shopping/static/js/2.b79bc274.chunk.js.LICENSE.txt"
+    "url": "/p5-shopping/static/js/2.0697d77b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "66d12a0ee824fec841d1",
-    "url": "/p5-shopping/static/js/main.25008eac.chunk.js"
+    "revision": "eb1fc5e3d395d603191a",
+    "url": "/p5-shopping/static/js/main.a69cc8c6.chunk.js"
   },
   {
     "revision": "c84c9d4de07b6127b2bc",
