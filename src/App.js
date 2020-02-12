@@ -492,6 +492,12 @@ class App extends Component {
     var n = e;
     if (n < 2) {
       const wid = 100;
+      $(".pic1").css({
+        "z-index": 2
+      });
+      $(".pic3").css({
+        "z-index": 0
+      });
       $(".pic1").animate(
         {
           left: wid * (n - 1) + "vw",
@@ -521,6 +527,12 @@ class App extends Component {
       );
     } else if (n < 3) {
       const wid = 100;
+      $(".pic1").css({
+        "z-index": 1
+      });
+      $(".pic2").css({
+        "z-index": 2
+      });
       $(".pic1").animate(
         {
           left: wid * (n - 1) + "vw",
@@ -550,9 +562,15 @@ class App extends Component {
       );
     } else if (n < 4) {
       const wid = 100;
+      $(".pic2").css({
+        "z-index": 1
+      });
+      $(".pic3").css({
+        "z-index": 2
+      });
       $(".pic1").animate(
         {
-          left: -wid * (n - 4) + "vw",
+          left: -wid * (n - 2) + "vw",
           zIndex: 1
         },
         {

@@ -9,198 +9,133 @@ import $ from "jquery";
 const Header = props => {
   var start;
   var n = 1;
+  const running = function() {
+    const wid = 100;
+    if (n < 1) {
+      $(".pic1").css({
+        "z-index": 1
+      });
+      $(".pic2").css({
+        "z-index": 0
+      });
+      $(".pic3").css({
+        "z-index": 2
+      });
+      $(".pic1").animate(
+        {
+          left: wid * n + "vw",
+          zIndex: 2
+        },
+        {
+          duration: 1000
+        }
+      );
+      $(".pic2").animate(
+        {
+          left: -wid * (n + 1) + "vw",
+          zIndex: 1
+        },
+        {
+          duration: 1000
+        }
+      );
+      $(".pic3").animate(
+        {
+          left: wid * (n + 1) + "vw",
+          zIndex: 0
+        },
+        {
+          duration: 1000
+        }
+      );
+      n++;
+    } else if (n < 2) {
+      $(".pic1").css({
+        "z-index": 2
+      });
+      $(".pic2").css({
+        "z-index": 1
+      });
+      $(".pic3").css({
+        "z-index": 0
+      });
+      $(".pic1").animate(
+        {
+          left: wid * n + "vw",
+          zIndex: 0
+        },
+        {
+          duration: 1000
+        }
+      );
+      $(".pic2").animate(
+        {
+          left: wid * (n - 1) + "vw",
+          zIndex: 2
+        },
+        {
+          duration: 1000
+        }
+      );
+      $(".pic3").animate(
+        {
+          left: -wid * n + "vw",
+          zIndex: 1
+        },
+        {
+          duration: 1000
+        }
+      );
+      n++;
+    } else if (n < 3) {
+      $(".pic1").css({
+        "z-index": 0
+      });
+      $(".pic2").css({
+        "z-index": 2
+      });
+      $(".pic3").css({
+        "z-index": 1
+      });
+      $(".pic1").animate(
+        {
+          left: -wid * (n - 1) + "vw",
+          zIndex: 1
+        },
+        {
+          duration: 1000
+        }
+      );
+      $(".pic2").animate(
+        {
+          left: wid * (n - 1) + "vw",
+          zIndex: 0
+        },
+        {
+          duration: 1000
+        }
+      );
+      $(".pic3").animate(
+        {
+          left: wid * (n - 2) + "vw",
+          zIndex: 2
+        },
+        {
+          duration: 1000
+        }
+      );
+      n = 0;
+    }
+  };
 
   const slide = () => {
-    const running = function() {
-      const wid = 100;
-
-      if (n < 1) {
-        $(".pic1").animate(
-          {
-            left: wid * n + "vw",
-            zIndex: 2
-          },
-          {
-            duration: 1000
-          }
-        );
-        $(".pic2").animate(
-          {
-            left: -wid * (n + 1) + "vw",
-            zIndex: 1
-          },
-          {
-            duration: 1000
-          }
-        );
-        $(".pic3").animate(
-          {
-            left: wid * (n + 1) + "vw",
-            zIndex: 0
-          },
-          {
-            duration: 1000
-          }
-        );
-        n++;
-      } else if (n < 2) {
-        $(".pic1").animate(
-          {
-            left: wid * n + "vw",
-            zIndex: 10
-          },
-          {
-            duration: 1000
-          }
-        );
-        $(".pic2").animate(
-          {
-            left: wid * (n - 1) + "vw",
-            zIndex: 2
-          },
-          {
-            duration: 1000
-          }
-        );
-        $(".pic3").animate(
-          {
-            left: -wid * n + "vw",
-            zIndex: -10
-          },
-          {
-            duration: 1000
-          }
-        );
-        n++;
-      } else if (n < 3) {
-        $(".pic1").animate(
-          {
-            left: -wid * (n - 1) + "vw",
-            zIndex: 1
-          },
-          {
-            duration: 1000
-          }
-        );
-        $(".pic2").animate(
-          {
-            left: wid * (n - 1) + "vw",
-            zIndex: 0
-          },
-          {
-            duration: 1000
-          }
-        );
-        $(".pic3").animate(
-          {
-            left: wid * (n - 2) + "vw",
-            zIndex: 2
-          },
-          {
-            duration: 1000
-          }
-        );
-        n = 0;
-      }
-    };
-    start = setInterval(running, 6000);
+    start = setInterval(running, 3000);
   };
   const stop = () => {
     clearInterval(start);
   };
   const go = () => {
-    const running = function() {
-      const wid = 100;
-      if (n < 1) {
-        $(".pic1").animate(
-          {
-            left: wid * n + "vw",
-            zIndex: 2
-          },
-          {
-            duration: 1000
-          }
-        );
-        $(".pic2").animate(
-          {
-            left: -wid * (n + 1) + "vw",
-            zIndex: 1
-          },
-          {
-            duration: 1000
-          }
-        );
-        $(".pic3").animate(
-          {
-            left: wid * (n + 1) + "vw",
-            zIndex: 0
-          },
-          {
-            duration: 1000
-          }
-        );
-        n++;
-      } else if (n < 2) {
-        $(".pic1").animate(
-          {
-            left: wid * n + "vw",
-            zIndex: 10
-          },
-          {
-            duration: 1000
-          }
-        );
-        $(".pic2").animate(
-          {
-            left: wid * (n - 1) + "vw",
-            zIndex: 2
-          },
-          {
-            duration: 1000
-          }
-        );
-        $(".pic3").animate(
-          {
-            left: -wid * n + "vw",
-            zIndex: -10
-          },
-          {
-            duration: 1000
-          }
-        );
-        n++;
-      } else if (n < 3) {
-        $(".pic1").animate(
-          {
-            left: -wid * (n - 1) + "vw",
-            zIndex: 1
-          },
-          {
-            duration: 1000
-          }
-        );
-        $(".pic2").animate(
-          {
-            left: wid * (n - 1) + "vw",
-            zIndex: 0
-          },
-          {
-            duration: 1000
-          }
-        );
-        $(".pic3").animate(
-          {
-            left: wid * (n - 2) + "vw",
-            zIndex: 2
-          },
-          {
-            duration: 1000
-          }
-        );
-        n = 0;
-      }
-    };
-    start = setInterval(running, 6000);
+    start = setInterval(running, 3000);
   };
   return (
     <div
