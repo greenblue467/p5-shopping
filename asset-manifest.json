@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/p5-shopping/static/css/main.ccb62ab1.chunk.css",
+    "main.css": "/p5-shopping/static/css/main.35868c59.chunk.css",
     "main.js": "/p5-shopping/static/js/main.32925837.chunk.js",
     "main.js.map": "/p5-shopping/static/js/main.32925837.chunk.js.map",
     "runtime-main.js": "/p5-shopping/static/js/runtime-main.a75cd4c5.js",
@@ -8,9 +8,9 @@
     "static/js/2.0697d77b.chunk.js": "/p5-shopping/static/js/2.0697d77b.chunk.js",
     "static/js/2.0697d77b.chunk.js.map": "/p5-shopping/static/js/2.0697d77b.chunk.js.map",
     "index.html": "/p5-shopping/index.html",
-    "precache-manifest.58eb5e48375f7fc890474fca9b4a59bd.js": "/p5-shopping/precache-manifest.58eb5e48375f7fc890474fca9b4a59bd.js",
+    "precache-manifest.e85d32e79cc79a2ecc405b739e9e9faa.js": "/p5-shopping/precache-manifest.e85d32e79cc79a2ecc405b739e9e9faa.js",
     "service-worker.js": "/p5-shopping/service-worker.js",
-    "static/css/main.ccb62ab1.chunk.css.map": "/p5-shopping/static/css/main.ccb62ab1.chunk.css.map",
+    "static/css/main.35868c59.chunk.css.map": "/p5-shopping/static/css/main.35868c59.chunk.css.map",
     "static/js/2.0697d77b.chunk.js.LICENSE.txt": "/p5-shopping/static/js/2.0697d77b.chunk.js.LICENSE.txt",
     "static/media/p1.jpg": "/p5-shopping/static/media/p1.46465899.jpg",
     "static/media/p2.jpg": "/p5-shopping/static/media/p2.bfaf898f.jpg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.a75cd4c5.js",
     "static/js/2.0697d77b.chunk.js",
-    "static/css/main.ccb62ab1.chunk.css",
+    "static/css/main.35868c59.chunk.css",
     "static/js/main.32925837.chunk.js"
   ]
 }
