@@ -19,6 +19,7 @@
 .navbar .nav {
   background-color: #2d3854;
   position: absolute;
+  z-index: 6;
   top: 5rem;
   left: 0;
   width: 100%;

@@ -15,6 +15,7 @@
   .nav {
     background-color: lighten($color1, 5%);
     position: absolute;
+    z-index: 6;
     top: 5rem;
     left: 0;
     width: 100%;
